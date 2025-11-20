@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>性格タイプ診断（MBTI風）</title>
+</head>
+<body>
+
+  <h1>性格タイプ診断（MBTI風）</h1>
+  <p>いくつかの質問に答えて、MBTI風の4タイプ（分析家・外交官・番人・探検家）に分類します。</p>
+
+  <!-- Q1, Q2 : E / I -->
+  <div>
+    <p>Q1. 休みの日はどちらかというと？</p>
+    <label><input type="radio" name="q1" value="E"> 予定を入れて、誰かと会ったり出かけたい</label><br>
+    <label><input type="radio" name="q1" value="I"> 一人でのんびり、マイペースに過ごしたい</label>
+  </div>
+
+  <div>
+    <p>Q2. 初対面の人と話すときは？</p>
+    <label><input type="radio" name="q2" value="E"> けっこう平気。自分から話しかけることも多い</label><br>
+    <label><input type="radio" name="q2" value="I"> 少し緊張する。様子を見てから話し始める</label>
+  </div>
+
+  <!-- Q3, Q4 : N / S -->
+  <div>
+    <p>Q3. 新しいアイデアを考えるときは？</p>
+    <label><input type="radio" name="q3" value="N"> 未来の可能性や“もしも”から想像することが多い</label><br>
+    <label><input type="radio" name="q3" value="S"> 今ある情報や事実をベースに考えることが多い</label>
+  </div>
+
+  <div>
+    <p>Q4. 説明を聞くとき、どちらがわかりやすい？</p>
+    <label><input type="radio" name="q4" value="N"> まず全体像やコンセプトをざっくり聞きたい</label><br>
+    <label><input type="radio" name="q4" value="S"> 具体例や手順から、順番に説明してほしい</label>
+  </div>
+
+  <!-- Q5, Q6 : T / F -->
+  <div>
+    <p>Q5. 何かを決めるとき、どちらを重視しがち？</p>
+    <label><input type="radio" name="q5" value="T"> 筋が通っているか、合理的かどうか</label><br>
+    <label><input type="radio" name="q5" value="F"> その場の雰囲気や、人の気持ち</label>
+  </div>
+
+  <div>
+    <p>Q6. 友だちが悩んで相談してきたときは？</p>
+    <label><input type="radio" name="q6" value="T"> まず状況を整理して、解決策を一緒に考える</label><br>
+    <label><input type="radio" name="q6" value="F"> まず気持ちに共感して、寄り添うことを大事にする</label>
+  </div>
+
+  <!-- Q7, Q8 : J / P -->
+  <div>
+    <p>Q7. 仕事や勉強の進め方は？</p>
+    <label><input type="radio" name="q7" value="J"> あらかじめ計画を立てて、できるだけその通りに進めたい</label><br>
+    <label><input type="radio" name="q7" value="P"> そのときの状況を見ながら、柔軟に決めていきたい</label>
+  </div>
+
+  <div>
+    <p>Q8. 締切との付き合い方は？</p>
+    <label><input type="radio" name="q8" value="J"> 余裕をもって少し早めに終わらせたい</label><br>
+    <label><input type="radio" name="q8" value="P"> 締切が近づくとエンジンがかかるタイプだと思う</label>
+  </div>
+
+  <button id="start">診断する</button>
+
+  <h2>結果</h2>
+  <p id="result-type"></p>
+  <p id="result-group"></p>
+  <p id="result-text"></p>
+<img id="result-image" src="" alt="診断結果画像" style="width:200px; display:none;">
+
+  <!-- JSファイルを最後で読み込むのがポイント -->
+  <script src="app.js"></script>
+</body>
+</html>
